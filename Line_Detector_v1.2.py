@@ -46,7 +46,7 @@ cv2.waitKey(0)
 
 # Draw horizontal lines through 'edges' - find positions of white pixels in each line
 
-num_test_lines = 500
+num_test_lines = 500    # Should be less that ~650.
 division = (height // num_test_lines)
 test_points = []  # Heights at which horizontal lines cut image
 for i in range(1, num_test_lines + 1):
